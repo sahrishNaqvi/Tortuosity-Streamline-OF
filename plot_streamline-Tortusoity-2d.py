@@ -9,7 +9,7 @@
 #It uses readmesh to read the mesh coordinates (x, y, z) from the specified directory.
 from fluidfoam import readmesh
 
-sol = '/home/sahrish/Downloads/OF_Model_5.4556/'
+sol = 'path/to/working-directory/'
 
 x, y, z = readmesh(sol)
 
@@ -22,7 +22,7 @@ x, y, z = readmesh(sol)
 
 from fluidfoam import readvector
 
-timename = '500'
+timename = 'lastTime' # define lasttime of the solution directory
 vel = readvector(sol, timename, 'U')
 
 ###############################################################################
