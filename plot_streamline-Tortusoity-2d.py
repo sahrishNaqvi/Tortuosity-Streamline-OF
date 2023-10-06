@@ -136,7 +136,7 @@ print("New Total Streamline Length:", new_total_streamline_length)
 straight_line_distance = 64
 
 # Calculating tortuosity
-T = new_total_streamline_length / straight_line_distance/len(y_values)
+T = new_total_streamline_length / straight_line_distance/len(y_values) # L/L0, where L is the average streamline length
 print("Tortuosity (T):", T)
 plt.show()
 # ... [Rest of the code remains the same]
