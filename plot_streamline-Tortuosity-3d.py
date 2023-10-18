@@ -117,20 +117,6 @@ ax.set_ylim([0, 16])
 ax.set_zlim([0, 16])
 
 # Calculate tortuosity
-# ... Your code here ...
-
-#def calculate_tortuosity(x_path, y_path, z_path):
- #   path_length = np.sum(np.sqrt(np.diff(x_path)**2 + np.diff(y_path)**2 + np.diff(z_path)**2))
-  #  straight_line = np.sqrt((x_path[-1] - x_path[0])**2 + (y_path[-1] - y_path[0])**2 + (z_path[-1] - z_path[0])**2)
-   # return path_length / straight_line
-    
-#tortuosities = []
-#for l in range(len(x_positions)):
- #   tort = calculate_tortuosity(x_positions[l, :], y_positions[l, :], z_positions[l, :])
-  #  tortuosities.append(tort)
-    
-#avg_tortuosity = np.mean(tortuosities)
-#print(f"Average Tortuosity: {avg_tortuosity}")
 
 def calculate_path_length_within_porous(x_path, y_path, z_path, porous_x0, porous_x1):
     path_length = 0.0
